@@ -1,0 +1,27 @@
+.pictures {
+    padding: 100px 24px 0;
+}
+
+@media screen and (max-width: 1440px) {
+    .pictures {
+        padding: 100px 12px 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .pictures {
+        padding: 80px 15px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pictures {
+        padding: 70px 24px 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .gallery-block {
+        padding: 70px 15px 0;
+    }
+}

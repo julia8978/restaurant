@@ -1,0 +1,19 @@
+.title {
+    font-size: 4rem;
+    line-height: 5.012rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 3.5rem;
+        line-height: 4.386rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 3rem;
+        line-height: 3.759rem;
+    }
+}

@@ -1,0 +1,29 @@
+.subtitle {
+    font-size: 2.5rem;
+    line-height: 3.133rem;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 1024px) {
+    .subtitle {
+        font-size: 2.2rem;
+        line-height: 2.757rem;
+        margin: $base-fz 0 25px;
+    }
+
+    .about-chef__wrapper .subtitle {
+        margin: $base-fz 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .subtitle {
+        font-size: 2rem;
+        line-height: 2.506rem;
+        margin: 20px 0 $base-fz;
+    }
+
+    .about-chef__wrapper .subtitle {
+        margin: 20px 0;
+    }
+}

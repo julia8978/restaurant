@@ -1,0 +1,51 @@
+.home-page {
+    color: $accent-color;
+    padding: 218px 0 185px;
+
+    &__title {
+        max-width: 914px;
+        font-size: 8.5rem;
+        line-height: 10.343rem;
+        margin: 0 auto;
+    }
+
+    &__subtitle {
+        margin: 35px 0 60px;
+        font-size: 2.5rem;
+        line-height: 3.133rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .home-page {
+        padding: 183px 0 153px;
+
+        &__title {
+            max-width: 697px;
+            font-size: 6rem;
+            line-height: 7.301rem;
+        }
+
+        &__subtitle {
+            margin: 35px 0 63px;
+            font-size: 1.8rem;
+            line-height: 2.255rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-page {
+        padding: 171px 0 99px;
+
+        &__title {
+            max-width: 329px;
+            font-size: 5rem;
+            line-height: 5.765rem;
+        }
+
+        &__subtitle {
+            margin: 35px 0 66px;
+        }
+    }
+}

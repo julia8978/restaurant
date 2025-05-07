@@ -1,0 +1,23 @@
+.dishes-catalog {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+    .dishes-catalog {
+        margin-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dishes-catalog {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .dishes-catalog {
+        align-items: center;
+    }
+}
