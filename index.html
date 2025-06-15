@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ресторан AGATE</title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/70df49c67e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="background">
+        <header class="header">
+            <a class="logo" href="" aria-label="Ресторан AGATE">AGATE</a>
+            <nav class="nav-menu">
+                <a href="#about-restaurant" class="nav-menu__item" aria-label="О ресторане"><span class="nav-menu__text">О ресторане</span></a>
+                <a href="#menu" class="nav-menu__item" aria-label="Меню"><span class="nav-menu__text">Меню</span></a>
+                <a href="#contact-us" class="nav-menu__item" aria-label="Контакты"><span class="nav-menu__text">Контакты</span></a>
+            </nav>
+        </header>
+
+        <section class="home-page">
+            <h1 class="home-page__title">РЕСТОРАН АВТОРСКОЙ КУХНИ</h1>
+            <p class="home-page__subtitle">Легкая атмосфера, европейская и азиатская кухня</p>
+            <a href="#contact-us" class="button button--white" aria-label="Связаться с нами">Связаться с нами</a>
+        </section>
+    </div>
+    <main>
+        <section class="about-us" id="about-restaurant">
+            <p class="about-us__content">
+                Мы понравимся вам своей легкой атмосферой, уровнем кухни и подачей блюд.
+                Мы любим аристократичную простоту в интерьере, хорошую музыку
+                и неповторимый ризотто нашего шефа, Максима Болова.
+            </p>
+
+        </section>
+
+        <section class="pictures">
+            <div class="gallery">
+                <div class="gallery__item">
+                    <img src="./img/pictures/img-1.png" alt="Барная стойка">
+                </div>
+                <div class="gallery__item">
+                    <img src="./img/pictures/img-2.png" alt="Ужин">
+                </div>
+                <div class="gallery__item">
+                    <img src="./img/pictures/img-3.png" alt="Обед">
+                </div>
+                <div class="gallery__item">
+                    <img src="./img/pictures/img-4.png" alt="Завтрак">
+                </div>
+                <div class="gallery__item">
+                    <img src="./img/pictures/img-5.png" alt="Интерьер">
+                </div>
+                <div class="gallery__item">
+                    <img src="./img/pictures/img-6.png" alt="Десерт">
+                </div>
+            </div>
+        </section>
+
+        <section class="dishes" id="menu">
+            <h3 class="title">Избранные блюда нашего меню</h3>
+            <p class="dishes__subtitle">Осеннее меню от шеф повара</p>
+            <div class="dishes-catalog">
+                <article class="dish dish--red">
+                    <div class="dish__image">
+                        <img src="./img/favorite-dishes/pumpkin-soup.png" alt="Тыквенный суп">
+                    </div>
+                    <div class="dish__content">
+                        <h4 class="dish__title">Тыквенный суп</h4>
+                        <p class="dish__description">Осенний тыквенный суп. В ингридиентах тыква, шампиньоны,
+                            щепотка мускатного ореха.</p>
+                        <p class="dish__cost">1980р.</p>
+                    </div>
+                </article>
+                <article class="dish dish--green">
+                    <div class="dish__image">
+                        <img src="./img/favorite-dishes/pasta.png" alt="Парпаделле">
+                    </div>
+                    <div class="dish__content">
+                        <h4 class="dish__title">Парпаделле</h4>
+                        <p class="dish__description">Итальянская паста с богатым вкусом свеклы и томатным песто,
+                            подается с базиликом и горошком.</p>
+                        <p class="dish__cost">1400р.</p>
+                    </div>
+                </article>
+                <article class="dish dish--orange">
+                    <div class="dish__image">
+                        <img src="./img/favorite-dishes/salad.png" alt="Линч салат">
+                    </div>
+                    <div class="dish__content">
+                        <h4 class="dish__title">Линч салат</h4>
+                        <p class="dish__description">Питательный утренний салат - это просто белковая бомба для
+                            любителей фитнеса.</p>
+                        <p class="dish__cost">1300р.</p>
+                    </div>
+                </article>
+            </div>
+            <a class="button button--black" href="#" aria-label="Посмотреть меню">Посмотреть меню</a>
+        </section>
+
+        <section class="about-chef">
+            <div class="about-chef__photo">
+                <img src="./img/chef/chef.png" alt="Фотография шеф-повара в ресторане">
+            </div>
+            <h3 class="title">Максим Болов</h3>
+            <p class="about-chef__subtitle subtitle">Шеф-повар AGATE</p>
+            <p class="about-chef__content">
+                Максим - ученик известного шеф-повара Ерика Крауа.
+                Принимает участие в крупнейших воркшопах, работал
+                в ресторанах Франции, Бельгии и Финляндии.
+                У Максима всегда свежее авторское видение меню.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h2 class="footer-subtitle">
+            Свяжитесь с нами
+        </h2>
+        <ul class="contacts" id="contact-us">
+            <li class="contacts__item">
+                <a href="tel:+11234567890" aria-label="Позвонить по номеру телефона">+ 1 123 456 78 90</a>
+            </li>
+            <li class="contacts__item">
+                <a href="mailto:agate@yandex.com" aria-label="Написать на почту ресторана">agate@yandex.com</a>
+            </li>
+            <li class="contacts__item">
+                <a href="https://yandex.by/maps/2/saint-petersburg/house/naberezhnaya_obvodnogo_kanala_75/Z0kYdQJhT0AAQFtjfXVwdHtgYA==/?indoorLevel=1&ll=30.351657%2C59.915734&z=17"
+                    aria-label="Посмотреть местоположение на карте">Обводной канал, 75а. Санкт-Петербург</a>
+            </li>
+        </ul>
+        <p class="footer__time"> Мы открыты ежедневно в 12:00 - 12:00</p>
+        <div class="socials">
+            <a href="https://www.facebook.com/" class="socials__item" aria-label="Перейти на аккаунт в Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://x.com/" class="socials__item" aria-label="Перейти на аккаунт в Twitter">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/" class="socials__item" aria-label="Перейти на аккаунт в Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+    <a class="arrow-up" href="#">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+</body>
+
+</html>

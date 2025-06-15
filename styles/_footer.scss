@@ -1,0 +1,38 @@
+.footer {
+    background-color: rgba(38, 38, 38, 1);
+    padding: 100px 0;
+
+    &__time {
+        font-size: 2.5rem;
+        line-height: 3.133rem;
+        font-weight: 300;
+        color: rgba(177, 177, 177, 1);
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        padding: 80px 0 78px;
+        &__time {
+            font-size: 2rem;
+            line-height: 2.506rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 70px 0 65px;
+        &__time {
+            font-size: 1.8rem;
+            line-height: 2.255rem;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .footer {
+        padding: 70px 10px;
+    }
+}

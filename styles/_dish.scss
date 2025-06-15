@@ -1,0 +1,202 @@
+.dish {
+
+    max-width: 360px;
+    width: calc(100% - 2 * 48px / 3);
+    text-align: left;
+    position: relative;
+
+    &:not(:last-of-type) {
+        margin-right: 48px;
+    }
+
+    &__content {
+        margin-top: 35px;
+        font-size: 1.8rem;
+        line-height: 2.255rem;
+    }
+
+    &__title {
+        font-size: 3rem;
+        line-height: 3.759rem;
+    }
+
+    &__description {
+        font-weight: 300;
+        color: $subtitle-color;
+        margin: 15px 0;
+    }
+
+    &__cost {
+        font-weight: 700;
+    }
+
+
+}
+
+.dish--red::before {
+    @include sticker("HOT!", rgb(211, 59, 59));
+}
+
+.dish--green::before {
+    @include sticker("NEW!", rgb(179, 225, 81));
+}
+
+.dish--orange::before {
+    @include sticker("HIT!", rgb(229, 164, 52));
+}
+
+@media screen and (max-width: 1250px) {
+    .dish {
+        max-width: 310px;
+        width: calc((100% - 2 * 30px)/3);
+
+        &:not(:last-of-type) {
+            margin-right: 30px;
+        }
+
+        &::before {
+            @include sticker1250;
+        }
+
+        &__content {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .dish {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .dish {
+        max-width: 253px;
+        width: calc((100% - 2 * 92px) / 3);
+
+        &:not(:last-of-type) {
+            margin-right: 92px;
+        }
+
+        &::before {
+            @include sticker1024;
+        }
+
+        &__content {
+            margin-top: 15px;
+            font-size: 1.5rem;
+            line-height: 1.88rem;
+        }
+
+        &__title {
+            font-size: 2.5rem;
+            line-height: 3.133rem;
+        }
+
+        &__description {
+            margin: 15px 0 17px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .dish {
+        max-width: 220px;
+        width: calc((100% - 2 * 42px) / 3);
+
+        &:not(:last-of-type) {
+            margin-right: 42px;
+        }
+
+        &::before {
+            @include sticker1250;
+        }
+
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .dish {
+        max-width: 200px;
+        width: calc((100% - 2 * 32px) / 3);
+
+        &:not(:last-of-type) {
+            margin-right: 32px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dish {
+        max-width: 692px;
+        width: 100%;
+        display: flex;
+
+        & img {
+            object-fit: cover;
+        }
+
+        &:not(:last-of-type) {
+            margin-right: 0;
+            margin-bottom: 58px;
+        }
+
+        &::before {
+            @include sticker768;
+        }
+
+        &__image {
+            max-width: 320px;
+        }
+
+        &__content {
+            text-align: left;
+            font-size: 2rem;
+            line-height: 2.5rem;
+            max-width: 348px;
+            padding-top: 17px;
+            margin: 0 0 0 24px;
+        }
+
+        &__description {
+            margin: 20px 0;
+        }
+
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .dish {
+        max-width: 300px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        &:not(:last-of-type) {
+            margin-bottom: 48px;
+        }
+
+        &___image {
+            max-width: 300px;
+        }
+
+        &__content {
+            max-width: 300px;
+            padding: 0;
+            margin: 15px 0 0;
+            font-size: 1.8rem;
+            line-height: 1.6rem;
+        }
+
+        &__title {
+            font-size: 2rem;
+        }
+
+        &__description {
+            margin: 15px 0;
+        }
+    }
+}

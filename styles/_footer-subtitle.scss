@@ -1,0 +1,19 @@
+.footer-subtitle {
+    font-size: 6.5rem;
+    line-height: 8.145rem;
+    color: $accent-color;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer-subtitle {
+        font-size: 5rem;
+        line-height: 6.265rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-subtitle {
+        font-size: 4rem;
+        line-height: 5.012rem;
+    }
+}
